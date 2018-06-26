@@ -1,0 +1,281 @@
+.allCourse{
+  padding-top:40px;
+}
+.allCourse .result{
+  width:100%;
+  position:relative;
+  font-size:14px;
+  color:#999;
+  margin-bottom:20px;
+}
+.allCourse .result .resName{
+  display:inline-block;
+  width:300px;
+}
+.allCourse .result .resCount{
+  display:inline-block;
+  width:200px;
+  position:absolute;
+  right:0;
+  text-align:right;
+}
+/*课程筛选*/
+.sizer{
+  background:#fff;
+  cursor:pointer;
+}
+/*全部课程*/
+.sizer .whole{
+  width:100%;
+  height:55px;
+  line-height:55px;
+  border-bottom:1px solid #ccc;
+}
+.sizer .whole p{
+  display:inline-block;
+  height:100%;
+  font-size:15px;
+  color:#999;
+}
+.sizer .whole .allName{
+  width:120px;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+}
+.sizer .whole .courseName{
+  width:1060px;
+  margin-left:10px;
+}
+.sizer .whole .courseName .name{
+  display:inline-block;
+  height:83%;
+  margin: 0 10px;
+}
+.sizer .whole .courseName .name:hover{
+  border-bottom:4px solid #3d66ad;
+  color:#3d66ad;
+}
+/*导航栏激活效果*/
+.active{
+  border-bottom:4px solid #3d66ad;
+  color:#3d66ad;
+}
+/*课程分类*/
+.courseClassification{
+  width:100%;
+}
+.courseClassification li{
+  float:left;
+}
+.courseClassification .nameBar{
+  width:120px;
+  height:55px;
+  text-align:center;
+  line-height:55px;
+  font-size:18px;
+  font-weight:bold;
+  color:#999;
+}
+.courseClassification .every{
+  width:1060px;
+  margin-left:15px;
+  padding-bottom:10px;
+}
+.courseClassification .every .everyName{
+  display:inline-block;
+  height:35px;
+  line-height:35px;
+  margin:10px 10px 0 10px;
+  font-size:15px;
+}
+.courseClassification .every .everyName:hover{
+  border-bottom:4px solid #3d66ad;
+  color:#3d66ad;
+}
+/*搜索结果*/
+.searchResult{
+  background:#fff;
+  margin-top:20px;
+}
+/**/
+.searchResult .title{
+  width:100%;
+  height:40px;
+  position:relative;
+}
+.searchResult .title .titleName{
+  display:inline-block;
+  height:100%;
+  margin:0 25px;
+  line-height:40px;
+  text-align:center;
+  color:#3d66ad;
+  border-bottom:4px solid #3d66ad;
+  font-size:18px;
+  font-weight:bold;
+}
+/*页面跳转*/
+.searchResult .title .pageNow{
+  display:block;
+  width:120px;
+  height:100%;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  text-align:center;
+  font-size:16px;
+  cursor:pointer;
+  font-weight:bold;
+  color:#999;
+}
+.searchResult .title .pageNow .now{
+  color:#3d66ad;
+}
+.searchResult .title .pageNow .iconfont{
+  font-size:15px;
+  color:#666;
+  outline:none;
+  border:0;
+  background:#fff;
+  cursor:pointer;
+}
+/*课程列表*/
+.searchResult .courseList2{
+  width:100%;
+}
+.searchResult .courseList2 .courseListLi{
+  height:160px;
+  padding:20px;
+  border-top:1px solid #ccc;
+}
+.searchResult .courseList2 .inBox{
+  width:100%;
+  position:relative;
+}
+/*图片*/
+.searchResult .courseList2 .inBox .picture{
+  width:200px;
+  height:120px;
+  position:absolute;
+  left:0;
+  top:0;
+  background:#eaeef6;
+  overflow:hidden;
+}
+/*介绍*/
+.searchResult .courseList2 .inBox .gradeDetail{
+  width:750px;
+  height:120px;
+  margin-left:220px;
+  line-height:24px;
+}
+.searchResult .courseList2 .inBox .gradeDetail .gradeTitle{
+  font-size:18px;
+  font-weight:bold;
+  color:#3d66ad;
+}
+.searchResult .courseList2 .inBox .gradeDetail .joinCount{
+  margin:5px 0;
+  color:#666;
+}
+.searchResult .courseList2 .inBox .gradeDetail .joinCount .num{
+  color:#f39800;
+  font-weight:bold;
+}
+.searchResult .courseList2 .inBox .gradeDetail .remarks{
+  color:#999;
+  overflow:hidden;
+  height:50px;
+}
+/*按钮*/
+.searchResult .courseList2 .inBox .gradeBtn{
+  position:absolute;
+  right:0;
+  bottom:20px;
+}
+.searchResult .courseList2 .inBox .gradeBtn .button{
+  display:block;
+  width:140px;
+  height:35px;
+  text-align:center;
+  line-height:35px;
+  border:1px solid #3d66ad;
+  color:#3d66ad;
+  font-size:18px;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+}
+.searchResult .courseList2 .inBox .gradeBtn .button:hover{
+  background: #3d66ad;
+  color:#fff;
+}
+/*分页器*/
+.page{
+  margin-top:40px;
+  text-align:center;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.page .pageItem{
+  display:inline-block;
+  height:35px;
+  background:#fff;
+  line-height:35px;
+  padding:0 13px;
+  margin:0 2px;
+  font-size:16px;
+  color:#333;
+  cursor:pointer;
+}
+.page .pageItemActive{
+  background:#3d66ad;
+  color:#fff;
+  display:inline-block;
+  height:35px;
+  line-height:35px;
+  padding:0 13px;
+  margin:0 2px;
+  font-size:16px;
+  cursor:pointer;
+}
+.page .pageItem:hover{
+  background:#3d66ad;
+  color:#fff;
+}
+.page .pageItemDisable{
+  display:none;
+  height:35px;
+  line-height:35px;
+  padding:0 13px;
+  margin:0 2px;
+  background: #DDDDDD;
+  color:#333;
+}
+.skipto{
+  width:40px;
+  border:1px solid #ccc;
+  outline:none;
+  height:30px;
+  background:#fff;
+  text-align:center;
+}
+.skipToBtnPage{
+  display:inline-block;
+  height:35px;
+  background:#fff;
+  line-height:35px;
+  padding:0 13px;
+  margin:0 2px;
+  font-size:16px;
+  cursor:pointer
+}
+.pageItem-ellipsis{
+  display:inline-block;
+  height:35px;
+  line-height:35px;
+  padding:0 10px;
+  margin:0 2px;
+  font-weight:bold;
+}

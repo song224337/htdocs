@@ -1,0 +1,200 @@
+/*广告*/
+.advertising{
+  width:100%;
+  height:300px;
+  overflow:hidden;
+  background:#eaeef6;
+}
+/*内容*/
+.contactUs{
+  background:#fff;
+  margin-top:40px;
+  padding:1% 0;
+}
+.contactUs .titleBar{
+  width:100%;
+  height:50px;
+  background:#eaeef6;
+  margin:15px 0;
+  position:relative;
+}
+.contactUs .titleBar p{
+  display:inline-block;
+  height:100%;
+  text-align:center;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+}
+.contactUs .titleBar .title{
+  width:160px;
+  background:#3d66ad;
+  color:#fff;
+  position:relative;
+  left:-10px;
+}
+.contactUs .titleBar .title .triangle{
+  display:block;
+  width:0;
+  height:0;
+  border-top:10px solid #2c307e;
+  border-left: 10px solid transparent;
+  border-bottom:10px solid transparent;
+  position:absolute;
+  left:0;
+  bottom:-20px;
+}
+.contactUs .titleBar .englishName{
+  color:#3d66ad;
+  padding:0 20px;
+  position:absolute;
+  right:0;
+  top:0;
+}
+/*logo & number*/
+.contactUs .syedu{
+  width:100%;
+  padding:20px 0;
+}
+.contactUs .syedu .logoPic{
+  width:245px;
+  margin:30px auto;
+}
+.contactUs .syedu .telephone{
+  width:700px;
+  margin:40px auto;
+  height:30px;
+  line-height:30px;
+  position:relative;
+}
+.contactUs .syedu .telephone .number{
+  width:55%;
+  height:100%;
+  background:#fff;
+  margin:0 auto;
+  text-align:center;
+  font-size:24px;
+  z-index:10;
+  position:relative;
+  color:#666;
+}
+.contactUs .syedu .telephone .line{
+  display:block;
+  width:100%;
+  height:1px;
+  background:#999;
+  position:relative;
+  top:-50%;
+}
+.contactUs .syedu .address{
+  width:100%;
+  margin:30px 0;
+  text-align:center;
+  font-size:18px;
+}
+/*progress*/
+.guide{
+  width:100%;
+  height:10px;
+  background:#a7c0e0;
+}
+.guide .sliding{
+  width:100px;
+  height:100%;
+  background:#023894;
+  animation:progress 5s infinite linear;
+  -webkit-animation:progress 5s infinite linear;
+}
+@keyframes progress{
+  0%{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+  }
+  50%{
+    transform:translateX(1100px);
+    -webkit-transform:translateX(1100px);
+    -moz-transform:translateX(1100px);
+    -ms-transform:translateX(1100px);
+    /*background:#a7c0e0;*/
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    /*background: #023894;*/
+  }
+}
+.map{
+  width:100%;
+  height:660px;
+}
+.map .baiduMap{
+  width:100%;
+  height:100%;
+  box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+}
+
+
+/*school*/
+.schoolAddress{
+  width:100%;
+}
+.schoolAddress .titleBar2{
+  width:100%;
+  height:50px;
+  background:#eaeef6;
+  margin:80px 0 40px 0;
+  position:relative;
+}
+.schoolAddress .titleBar2 p{
+  display:inline-block;
+  height:100%;
+  text-align:center;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+}
+.schoolAddress .titleBar2 .title{
+  width:160px;
+  background:#3d66ad;
+  color:#fff;
+  position:absolute;
+  right:-10px;
+  top:0;
+}
+.schoolAddress .titleBar2 .title .triangle{
+  display:block;
+  width:0;
+  height:0;
+  border-top:10px solid #2c307e;
+  border-right: 10px solid transparent;
+  border-bottom:10px solid transparent;
+  position:absolute;
+  right:0;
+}
+.schoolAddress .titleBar2 .englishName{
+  color:#3d66ad;
+  padding:0 20px;
+}
+/*table*/
+.table{
+  width:100%;
+  text-align:center;
+  padding:20px;
+  font-size:18px;
+  color:#666;
+}
+.table tr{
+  height:60px;
+}
+.table td{
+  background:#edf7f7
+}
+.table td:nth-child(1){
+  width:300px;
+}

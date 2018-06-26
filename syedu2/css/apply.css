@@ -1,0 +1,91 @@
+/*广告*/
+.advertising{
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    background:#eaeef6;
+}
+/*apply*/
+.apply{
+    margin:20px auto;
+    padding:1px 0;
+    background:#fff;
+}
+.apply .appTitle{
+    width:80%;
+    position:relative;
+    margin:20px auto;
+}
+.apply .appTitle .want{
+    width:100%;
+    position:absolute;
+    left:0;
+    top:20%;
+    text-align:center;
+    color:#3d66ad;
+}
+.apply .hint{
+    width:80%;
+    margin:20px auto;
+}
+.apply .hint .hintName{
+    width:60px;
+    height:60px;
+    background:#3d66ad;
+    color:#fff;
+    padding:10px;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    float:left;
+}
+.apply .hint .hintList{
+    width:80%;
+    margin-left:80px;
+    font-size:16px;
+    color:#3d66ad;
+}
+.apply .hint .hintList p:nth-child(1){
+    margin-bottom:10px;
+}
+.apply .hint .hintList p:nth-child(2){
+   font-size:22px;
+    font-weight:bold;
+}
+/*form*/
+.form{
+    width:60%;
+    margin:40px auto;
+    padding-left:100px;
+}
+.form p{
+    margin:20px 0;
+}
+.form .uname,.uphone,.course{
+    outline:none;
+    width:260px;
+    height:35px;
+    padding-left:10px;
+}
+.form p .hide{
+    color:#f00;
+    display:none;
+}
+.form .chose{
+    outline:none;
+    height:35px;
+    width:auto;
+    padding:0 1%;
+}
+#city{display:none;}
+#school{display:none;}
+option{text-align:center;}
+.form .btn{
+    width:150px;
+    height:35px;
+    margin-right:40px;
+    background:#3d66ad;
+    color:#fff;
+    outline:none;border:0;
+    font-size:18px;
+}

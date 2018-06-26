@@ -1,0 +1,572 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+html{
+  /*overflow-x: hidden;*/
+  font-size:14px;
+  color:#333;
+  background:#e9f5f5;
+  /*background-image:url('../images/back.jpg');*/
+  /*background-repeat:no-repeat;*/
+  /*background-size:cover;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+ul,li,ol,dd,dt{
+  list-style:none;
+}
+a{
+  color:#666;
+  text-decoration:none;
+}
+.example{
+  min-width:1200px;
+  margin-top:80px;
+  margin-bottom:150px;
+}
+.fullWidth{width:100%;}
+.container{
+  width:1200px;
+  margin:0 auto;
+}
+@media screen and (min-width:1660px){
+  .swiper-container1 img{
+    width:100%;
+  }
+}
+.clearFloat:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/*header*/
+.header{
+  width:100%;
+  background:#fff;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+}
+.nav{
+  height:80px;
+  display:flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+.nav .logo{
+  width:28%;
+  display:flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  position:relative;
+}
+.nav .logo .logoBox{
+  width:65%;
+  position:relative;
+}
+.nav .logo .logoBox img{
+  position:absolute;
+  top:23%;
+  left:0;
+}
+/*校区选择*/
+.nav .logo .chose{
+  width:30%;
+  /*line-height:90px;*/
+  color:#999;
+  text-align:center;
+  /*position:relative;*/
+}
+.nav .logo .chose .triggerSchool{
+  height:100%;
+  line-height:90px;
+}
+.nav .logo .chose .school{
+  color:#999;
+}
+.nav .logo .chose:hover .schoolList{
+  display:block;
+}
+/*校区弹窗*/
+.schoolList{
+  display:none;
+  width:1200px;
+  height:600px;
+  position:absolute;
+  left:0;
+  bottom:-600px;
+  /*overflow:auto;*/
+  background:#fff;
+  box-shadow:2px 2px 3px #666;
+  -webkit-box-shadow:2px 2px 3px #666;
+  padding:30px;
+}
+.schoolList li{
+  width:100%;
+  position:relative;
+  margin:10px 0;
+}
+.schoolList li:hover div{
+  background:#3d66ad;
+  color:#fff;
+}
+.schoolList li:hover .schoolName{
+  color:#fff;
+}
+.schoolList div{
+  float:left;
+  background:#fafcff;
+}
+.schoolList .province{
+  width:120px;
+  height:40px;
+  line-height:40px;
+  margin-right:40px;
+  font-size:14px;
+  font-weight:bold;
+  border-top-right-radius:5px;
+  -webkit-border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  -webkit-border-bottom-right-radius:5px;
+}
+.schoolList .city{
+  width:960px;
+  height:100%;
+  padding-left:40px;
+  border-top-left-radius:5px;
+  -webkit-border-top-left-radius:5px;
+  border-bottom-left-radius:5px;
+  -webkit-border-bottom-left-radius:5px;
+}
+.schoolList .city .schoolName{
+  display:block;
+  width:150px;
+  height:30px;
+  line-height:30px;
+  margin:5px 0;
+  font-size:14px;
+  text-align:left;
+  float:left;
+}
+.schoolList .city .schoolName .underline{
+  height:100%;
+  padding:3px 0;
+}
+.schoolList .city .schoolName:hover .underline{
+  border-bottom:1px solid #fff;
+}
+/**/
+.nav .search{
+  width:40%;
+  height:40px;
+  margin:1.7% 0 0 0;
+  position:relative;
+  border:2px solid #023894;
+  text-align:center;
+}
+.searchCode{
+  width:480px;
+  position:absolute;
+  left:-2px;
+  top:38px;
+  border:2px solid #023894;
+  border-top:0;
+  text-align:left;
+  padding-left:10px;
+  display:none;
+}
+.searchCode .codes{
+  height:35px;
+  line-height:35px;
+  color:#999;
+}
+.nav .search input{
+  width:80%;
+  height:36px;
+  outline:none;
+  border:0;
+  position:relative;
+  left:-8%;
+  background:transparent;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #999;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #999;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #999;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #999;
+}
+.nav .search .iconfont{
+  width:60px;
+  height:36px;
+  background:#023894;
+  color:#fff;
+  line-height:36px;
+  font-size:26px;
+  position:absolute;
+  right:0;
+  top:0;
+  cursor:pointer;
+}
+.nav .dropdown{
+  width:80px;
+  height:100%;
+  text-align:center;
+  padding:1% 0 1% 0;
+  position:relative;
+  background:#023894;
+  color:#fff;
+}
+.nav .dropdown .iconfont{
+  width:100%;
+  height:100%;
+  font-size:40px;
+  line-height:60px;
+}
+.nav .dropdown .iconfont:hover{
+  cursor:default;
+}
+.nav .dropdown:hover .dropdown_list{
+  display:block;
+  animation: moveDown 1s;
+  z-index:-10;
+}
+.nav .dropdown .dropdown_list{
+  width:100%;
+  display:none;
+  position:absolute;
+  left:0;
+  bottom:-123px;
+}
+.nav .dropdown .dropdown_list li{
+  width:100%;
+  height:40px;
+  background:#3d66ad;
+  line-height:40px;
+}
+.nav .dropdown .dropdown_list li:nth-child(2){
+  margin:1px 0;
+}
+.nav .dropdown .dropdown_list li:hover{
+  background:#023894;
+}
+.nav .dropdown .dropdown_list li .headerBtn{
+  color:#fff;
+}
+@keyframes moveDown{
+  0%{
+    transform:translateY(-100px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+/*广告*/
+.advertising1{
+  /*width:100%;*/
+  height:300px;
+  overflow:hidden;
+  background:#eaeef6;
+}
+/*footer*/
+.footer {
+  width: 100%;
+  background: #333;
+  color: #666;
+  padding:1% 0;
+  min-width:1200px;
+  /*float:left;*/
+}
+.phone{
+  width:50%;
+  position:relative;
+  margin:2% auto 0.6% auto;
+}
+.phone .wmBox{
+  width:13%;
+}
+.phone .address{
+  display:inline-block;
+  width:80%;
+  position:absolute;
+  left:20%;
+  top:10%;
+}
+.phone .address h1 .iconfont{
+  font-size:28px;
+}
+.phone .address p{
+  margin:2% 0;
+}
+.copy{
+  width:100%;
+  text-align:center;
+}
+/*客服*/
+.server{
+  width:40px;
+  position:fixed;
+  top:40%;
+  right:10px;
+  z-index:100;
+}
+.server li{
+  width:100%;
+  height:40px;
+  background:rgba(0,0,0,0.22);
+  position:relative;
+  margin-bottom:5px;
+}
+.server li .iconfont{
+  display:block;
+  text-align:center;
+  line-height:40px;
+  font-size:20px;
+  color:#fff;
+}
+.server .showText1{
+  width:100%;
+  height:70px;
+  background: -moz-linear-gradient(top, #3d66ad 0%, #033995 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d66ad), color-stop(100%,#033995));
+  background: -webkit-linear-gradient(top, #3d66ad 0%,#033995 100%);
+  background: -o-linear-gradient(top, #3d66ad 0%,#033995 100%);
+  background: -ms-linear-gradient(top, #3d66ad 0%,#033995 100%);
+  background: linear-gradient(to bottom, #3d66ad 0%,#033995 100%);
+}
+.server .showText1 .iconfont{
+  height:35px;
+}
+.server .showText1 .text{
+  display:block;
+  height:35px;
+  width:100%;
+  padding:0px 7px 0 7px;
+  color:#fff;
+  font-size:12px;
+}
+.server .showText1:hover{
+  background: -moz-linear-gradient(top, #5188c8 0%, #034ab7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5188c8), color-stop(100%,#034ab7));
+  background: -webkit-linear-gradient(top, #5188c8 0%,#034ab7 100%);
+  background: -o-linear-gradient(top, #5188c8 0%,#034ab7 100%);
+  background: -ms-linear-gradient(top, #5188c8 0%,#034ab7 100%);
+  background: linear-gradient(to bottom, #5188c8 0%,#034ab7 100%);
+}
+.server .showText2 .text{
+  display:none;
+  width:100%;
+  height:100%;
+  text-align:center;
+  padding:4px 7px 0 7px;
+  color:#fff;
+  font-size:12px;
+  background:#023894;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.server .showText2:hover .text{
+  display:block;
+  z-index:10;
+}
+.server .showImg:hover{
+  background:#023894;
+}
+.server .showImg .box{
+  display:none;
+  width:190px;
+  position:absolute;
+  left:-190px;
+  top:-300%;
+}
+.server .showImg:hover .box{
+  display:block;
+  animation: moveRg 0.5s;
+}
+@keyframes moveRg{
+  0%{
+    transform:translateX(-20px);
+    -webkit-transform:translateX(-20px);
+    -moz-transform:translateX(-20px);
+    -ms-transform:translateX(-20px);
+  }
+  100%{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+  }
+}
+/*底部客服课程领取*/
+.bottom{
+  width:100%;
+  height:80px;
+  background:rgba(61,102,173,0.75);
+  position:fixed;
+  left:0;
+  bottom:0;
+  z-index:10;
+}
+.bottom .draw{
+  width:1000px;
+  height:100%;
+  margin:0 auto;
+  position:relative;
+}
+.bottom .draw img{
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+.bottom .draw .req{
+  width:800px;
+  padding-top:1px;
+  position:relative;
+  left:200px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  color:#fff;
+}
+.bottom .draw .req .input{
+  margin-top:29px;
+  position:relative;
+}
+.bottom .draw .req .input .emptyShow{
+  width:150px;
+  height:30px;
+  line-height:30px;
+  border-radius:20px;
+  background:rgba(148,2,2,0.8);
+  color:#fff;
+  text-align:center;
+  position:absolute;
+  right:0;
+  top:-35px;
+  display:none;
+}
+.bottom .draw .req .input .emptyShow .arrows{
+  display:block;
+  width:0;
+  height:0;
+  border-top:5px solid rgba(148,2,2,0.8);
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  position:absolute;
+  left:48%;
+  bottom:-5px;
+}
+.bottom .draw .req input{
+  outline:none;
+  border:0;
+  width:150px;
+  height:25px;
+}
+.bottom .draw .req .btn{
+  width:160px;
+  text-align:center;
+  height:46px;
+  font-size:18px;
+  line-height:46px;
+  background:#f39800;
+  margin-top:17px;
+  color:#fff;
+  border:0;
+  outline:none;
+  cursor:pointer;
+}
+.bottom .draw .req .iconfont{
+  font-size:30px;
+  margin-top:23px;
+  cursor:pointer;
+}
+/*消息弹窗*/
+.messageWindow{
+  display:none;
+  width:400px;
+  height:300px;
+  position:absolute;
+  left:50%;
+  margin-left:-200px;
+  bottom:-450px;
+  background:rgba(255,255,255,1);
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow:2px 2px 4px #666;
+}
+.messageWindow .hide{
+  width:100%;
+  height:50px;
+  padding:10px;
+  text-align:right;
+}
+.messageWindow .hide .iconfont{
+  outline:none;
+  border:0;
+  font-size:24px;
+  background:#fff;
+  color:#999;
+  cursor:pointer;
+}
+.messageSuccess{
+  width:100%;
+  padding:10px 30px;
+  text-align:center;
+}
+.messageSuccess p{
+  font-size:16px;
+  margin:10px 0;
+}
+.messageSuccess .success{
+  height:35px;
+  padding-left:85px;
+  font-size:18px;
+}
+.messageSuccess .success span{
+  display:block;
+  float:left;
+  margin-right:10px;
+}
+.messageSuccess .success .text{
+  height:100%;
+  line-height:35px;
+}
+.messageSuccess .iconfont{
+  font-size:32px;
+  color:#3d66ad;
+}
+.affirm{
+  width:80%;
+  margin:20px auto;
+}
+.affirm .btnHide{
+  display:block;
+  width:100px;
+  height:35px;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border:1px solid #3d66ad;
+  color:#3d66ad;
+  text-align:center;
+  line-height:35px;
+  font-size:16px;
+  position:relative;
+  margin:auto;
+}
+.affirm .btnHide:hover{
+  color:#fff;
+  background:#3d66ad;
+}

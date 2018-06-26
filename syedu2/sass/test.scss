@@ -1,0 +1,235 @@
+@charset "UTF-8";
+$c : #3d668d;
+$y:#ff0;
+html{
+  font-family:"Microsoft YaHei";
+}
+.text1{
+  font-size:24px;
+  color:$c;
+}
+.block{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  border:10px solid #f00;
+  font-size:66px;
+  text-align:center;
+  line-height:100px;
+  background:$y;
+  animation: move linear 5s infinite  ;
+}
+@keyframes move{
+  0%{
+    transform:translate(0) rotate(0);
+    -webkit-transform:translate(0) rotate(0);
+    -moz-transform:translate(0) rotate(0);
+    -ms-transform:translate(0) rotate(0);
+  }
+  25%{
+    transform:translate(500px) rotate(180deg);
+  }
+  50%{
+    transform:translate(1000px) rotate(360deg);
+  }
+  75%{
+    transform:translate(400px) rotate(180deg);
+  }
+  100%{
+    transform:translate(0) rotate(0);
+  }
+}
+.article a {
+  color: blue;
+  &:hover { color: red }
+}
+#content aside {
+  color: red;
+  body.ie & { color: green }
+}
+.container{
+  h1,h2,h3{
+    margin:10px 0;
+  }
+}
+.nav{
+  width:50px;
+  height: 50px;
+  border: 10px solid #f00{
+    left:0; //这是不可以看到的注释
+    top:0; /*这是可以看到的注释*/
+  }
+}
+div{
+  background:#ccc;
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+    body.firefox & { font-weight: normal; }
+  }
+}
+
+/*标题*/
+h1{
+  font:{
+    family:"Microsoft YaHei";
+    size:16px;
+    weight:normal;
+  }
+}
+$translucent-red: rgba(255, 0, 0, 0.5);
+$green: #00ff00;
+div {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#{ie-hex-str($green)}', endColorstr='#{ie-hex-str($translucent-red)}');
+}
+.error {
+  border: 1px solid #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+.aaa{
+  display:block;
+  .bbb{
+    display:block;
+    width:200px;
+    font:{
+      size:14px;
+      weight:bold;
+    }
+  }
+}
+.aaa:hover{
+  color:#f00;
+}
+.a{
+  width:100px;
+  height:100px;
+  background:#f00;
+}
+.b{
+  @extend .a;
+  border:2px solid #ff0;
+}
+.c{
+  @extend .a;
+  @extend .b;
+  color:#00ff00;
+}
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+.notice {
+  @extend %extreme;
+}
+.parent {
+  color:#333;
+  @at-root .child {
+    border:1px solid #333;
+  }
+}
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+@each $animal, $color, $cursor in (puma, black, default),
+        (sea-slug, blue, pointer),
+        (egret, white, move) {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+    border: 2px solid $color;
+    cursor: $cursor;
+  }
+}
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 1;
+}
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: #ff0000;
+}
+.page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+}
+@mixin sexy-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+p { @include sexy-border(blue, 1in); }
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+.shadows {
+  width:200px;
+  height:200px;
+  @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+$values: #ff0000, #00ff00, #0000ff;
+.primary {
+  @include colors($values...);
+}
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+#sidebar { width: grid-width(1); }
+#sidebar { width: grid-width(2); }
+#sidebar { width: grid-width(3); }
+#sidebar { width: grid-width(4); }
+#sidebar { width: grid-width(5); }
+@mixin silly-links {
+  a {
+    color: blue;
+    background-color: red;
+  }
+}
+@include silly-links;
+.test{
+  width:500px;
+  height:300px;
+  margin:0 auto;
+  background:#ccc;
+  h1{color:#666;}
+  in{
+    width:80%;
+    padding:10px;
+    color:#fff;
+     h5{
+       color:#999;
+       background:#fff;
+     }
+     desc{
+        font-size:16px;
+       background:#fff;
+     };
+  }
+}

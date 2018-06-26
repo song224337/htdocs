@@ -1,0 +1,229 @@
+@charset "UTF-8";
+html {
+  font-family: "Microsoft YaHei"; }
+
+.text1 {
+  font-size: 24px;
+  color: #3d668d; }
+
+.block {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #f00;
+  font-size: 66px;
+  text-align: center;
+  line-height: 100px;
+  background: #ff0;
+  animation: move linear 5s infinite; }
+
+@keyframes move {
+  0% {
+    transform: translate(0) rotate(0);
+    -webkit-transform: translate(0) rotate(0);
+    -moz-transform: translate(0) rotate(0);
+    -ms-transform: translate(0) rotate(0); }
+  25% {
+    transform: translate(500px) rotate(180deg); }
+  50% {
+    transform: translate(1000px) rotate(360deg); }
+  75% {
+    transform: translate(400px) rotate(180deg); }
+  100% {
+    transform: translate(0) rotate(0); } }
+.article a {
+  color: blue; }
+  .article a:hover {
+    color: red; }
+
+#content aside {
+  color: red; }
+  body.ie #content aside {
+    color: green; }
+
+.container h1, .container h2, .container h3 {
+  margin: 10px 0; }
+
+.nav {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f00;
+    border-left: 0;
+    border-top: 0;
+  /*这是可以看到的注释*/ }
+
+div {
+  background: #ccc; }
+  div a {
+    font-weight: bold;
+    text-decoration: none; }
+    div a:hover {
+      text-decoration: underline; }
+    body.firefox div a {
+      font-weight: normal; }
+
+/*标题*/
+h1 {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: normal; }
+
+div {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#FF00FF00', endColorstr='#80FF0000'); }
+
+.error, .seriousError {
+  border: 1px solid #f00;
+  background-color: #fdd; }
+
+.seriousError {
+  border-width: 3px; }
+
+.aaa {
+  display: block; }
+  .aaa .bbb {
+    display: block;
+    width: 200px;
+    font-size: 14px;
+    font-weight: bold; }
+
+.aaa:hover {
+  color: #f00; }
+
+.a, .b, .c {
+  width: 100px;
+  height: 100px;
+  background: #f00; }
+
+.b, .c {
+  border: 2px solid #ff0; }
+
+.c {
+  color: #00ff00; }
+
+#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em; }
+
+.parent {
+  color: #333; }
+  .child {
+    border: 1px solid #333; }
+
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+.puma-icon {
+  background-image: url("/images/puma.png"); }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png"); }
+
+.egret-icon {
+  background-image: url("/images/egret.png"); }
+
+.salamander-icon {
+  background-image: url("/images/salamander.png"); }
+
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px solid black;
+  cursor: default; }
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px solid blue;
+  cursor: pointer; }
+
+.egret-icon {
+  background-image: url("/images/egret.png");
+  border: 2px solid white;
+  cursor: move; }
+
+.item-6 {
+  width: 12em; }
+
+.item-5 {
+  width: 10em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-3 {
+  width: 6em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-1 {
+  width: 2em; }
+
+.page-title {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  padding: 4px;
+  margin-top: 10px; }
+
+p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed; }
+
+.shadows {
+  width: 200px;
+  height: 200px;
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
+
+.primary {
+  color: #ff0000;
+  background-color: #00ff00;
+  border-color: #0000ff; }
+
+#sidebar {
+  width: 40px; }
+
+#sidebar {
+  width: 90px; }
+
+#sidebar {
+  width: 140px; }
+
+#sidebar {
+  width: 190px; }
+
+#sidebar {
+  width: 240px; }
+
+a {
+  color: blue;
+  background-color: red; }
+
+.test {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background: #ccc; }
+  .test h1 {
+    color: #666; }
+  .test in {
+    width: 80%;
+    padding: 10px;
+    color: #fff; }
+    .test in h5 {
+      color: #999;
+      background: #fff; }
+    .test in desc {
+      font-size: 16px;
+      background: #fff; }
+
+/*# sourceMappingURL=test.css.map */

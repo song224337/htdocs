@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>报名</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/syedu1.ico">
+    <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+<!--头部-->
+<header id="header"></header>
+<!--内容-->
+<div class="example">
+    <!--广告-->
+    <div class="advertising1"></div>
+    <!--报名表单-->
+    <div class="apply container">
+        <!--title-->
+        <div class="appTitle">
+            <img src="images/apply_title.png" alt="" class="fullWidth">
+            <h1 class="want">留言反馈</h1>
+        </div>
+        <!--温馨提示-->
+        <div class="hint clearFloat">
+            <div class="hintName">温馨提示</div>
+            <div class="hintList">
+                <p>（<span style="color:#f00;">*</span>）代表必填项目，请务必留下真实姓名、联系电话等。您的个人信息我们将严格保密，敬请放心。</p>
+                <p> 热线电话：<span style="color:#f00;">400-666-7863</span></p>
+            </div>
+            <!--表单-->
+            <form action="" method="post" class="form" onsubmit="return valid()">
+                <p>
+                    <span style="color:#f00">* </span>真实姓名：
+                    <input type="text" name="uname" class="uname" placeholder="请输入您的真实姓名">
+                    <span class="hide hide1"> 姓名不能为空！</span>
+                </p>
+                <p>
+                    <span style="color:#f00">* </span>联系电话：
+                    <input type="text" name="uphone" class="uphone" placeholder="请输入您的联系方式">
+                    <span class="hide hide2"> 手机号不能为空！</span>
+                    <span class="hide hide3"> 手机号格式不正确！</span>
+                </p>
+                <p>
+                    <span style="color:#f00">* </span>校区选择：
+                    <select name="province" id="province" class="chose" required>
+                        <option value="">---请选择---</option>
+                    </select>
+                    <select name="city" id="city" class="chose" required>
+                        <option value="">---请选择---</option>
+                    </select>
+                    <select name="school" id="school" class="chose" required>
+                        <option value="">---请选择---</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color:#f00">* </span>课程名称：
+                    <input type="text" name="course" class="course" placeholder="请输入课程名称">
+                    <span class="hide hide4"> 课程名称不能为空！</span>
+                </p>
+                <p>
+                    <input type="submit" value="提交" class="btn">
+                    <input type="reset" value="重置" class="btn">
+                </p>
+            </form>
+        </div>
+    </div>
+    <!--右侧客服-->
+    <ul class="server">
+        <li class="showText showText1">
+            <a href="##">
+                <span class="iconfont" style="font-size:25px;">&#xe77f;</span>
+                <span class="text">在线客服</span>
+            </a>
+        </li >
+        <li class="showText2">
+            <a href="##">
+                <span class="iconfont">&#xe685;</span>
+                <span class="text">留言反馈</span>
+            </a>
+        </li>
+        <li class="showImg">
+            <a href="##">
+                <span class="iconfont">&#xe615;</span>
+                <span class="box">
+                <img src="images/rgMove.png" alt="" class="fullWidth">
+              </span>
+            </a>
+        </li>
+        <li class="showText2">
+            <a href="#">
+                <span class="iconfont">&#xe61b;</span>
+                <span class="text">返回顶部</span>
+            </a>
+        </li>
+    </ul>
+    <!--底部领取课程-->
+    <div class="bottom free">
+        <div class="draw">
+            <img src="images/server.png" alt="">
+            <form class="req">
+                <div class="input">
+                    姓名： <input type="text" id="uname">
+                    <p class="emptyShow s1">姓名不能为空<span class="arrows"></span></p>
+                </div>
+                <div class="input">
+                    手机号： <input type="text" id="uphone">
+                    <p class="emptyShow s2">号码格式不正确 <span class="arrows"></span></p>
+                </div>
+                <button class="btn" id="freeBtn">免费领取课程</button>
+                <p class="iconfont" id="delete">&#xe638;</p>
+            </form>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer"></footer>
+<script src="js/base.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/header.js" type="text/javascript" charset="UTF-8"></script>
+<script>
+    // submit 验证事件
+    function valid(){
+        var uname = $('.uname').val(),
+            phone = $('.uphone').val(),
+            course = $('.course').val(),
+            reg=/^[1][3,4,5,7,8][0-9]{9}$/;
+        // 表单输入验证限制
+        if(!uname){
+            $('.hide1').show();
+            $('.uname').focus(function(){
+                $('.hide1').hide()
+            })
+            return false;
+        }else if(!phone){
+            $('.hide2').show();
+            $('.uphone').focus(function(){
+                $('.hide2').hide()
+            })
+            return false;
+        }else if(!reg.test(phone)){
+            $('.hide3').show();
+            $('.uphone').focus(function(){
+                $('.hide3').hide()
+            })
+            return false;
+        }else if(!course){
+            $('.hide4').show()
+            $('.course').focus(function(){
+                $('.hide4').hide()
+            })
+            return false;
+        }else{
+            console.log(12334545);
+            $('#messageWindow').show();
+            return true;
+        }
+    }
+    $(function(){
+        var iNum1,iNum2,
+            aProvince = ['上海市','江苏省','浙江省','安徽省'],
+            aCity = [
+                ['上海市'],
+                ['南京市','无锡市','苏州市','常州市','扬州市','南通市','徐州市','淮安市','盐城市','宿迁市','泰州市','镇江市'],
+                ['杭州市','宁波市','绍兴市','嘉兴市','金华市'],
+                ['合肥市','马鞍山市','芜湖市','滁州市']
+            ],
+            aSchool = [
+                [
+                    ['嘉定校区','浦东校区','松江校区','川沙校区'],
+                ],
+                [
+                    ['南京新街口校区','南京江宁校区'],
+                    ['无锡崇安校区','无锡惠山校区','无锡新校区','江阴校区','宜兴校区'],
+                    ['总部校','市区校','苏州新区校','苏州园区校','石路校区','相城校区','吴中校','吴江校','独墅湖校','昆山校','太仓校','常熟校','张家港校'],
+                    ['常州市区校','常州武进校','常州新北校','金坛校区','溧阳小区'],
+                    ['扬州小区','扬州江都校'],
+                    ['南通校区','启东校区','如皋校区'],
+                    ['徐州校区'],
+                    ['淮安校区'],
+                    ['盐城校区','东台校区'],
+                    ['宿迁校区'],
+                    ['泰州校区','靖江校区'],
+                    ['镇江校区','丹阳校区','句容校区']
+                ],
+                [
+                    ['杭州校区'],
+                    ['海曙校区','鄞州校区','余姚校区','慈溪校区'],
+                    ['越城校区','上虞校区'],
+                    ['嘉兴校区','海宁校区'],
+                    ['金华校区','义乌校区']
+                ],
+                [
+                    ['合肥校区'],
+                    ['马鞍山校区'],
+                    ['芜湖校区'],
+                    ['滁州校区']
+                ]
+            ]
+        // 省份添加
+        for(var i = 0; i<aProvince.length; i++){
+            $('#province').append('<option value="'+aProvince[i]+'">'+aProvince[i]+'</option>')
+        }
+        // 省市级联动
+        $('#province').change(function(){
+            $('#city').show().children().not(':eq(0)').remove();
+            $('#school').hide()
+            iNum1 = $(this).children('option:selected').index()
+//            console.log(iNum1);
+            var aaCity = aCity[iNum1-1];
+            for(var j = 0; j < aaCity.length; j++){
+                $('#city').append('<option value="'+aaCity[j]+'">'+aaCity[j]+'</option>')
+            }
+        })
+        $('#city').change(function(){
+            $('#school').show().children().not(':eq(0)').remove()
+            iNum2 = $(this).children('option:selected').index()
+            var aaSchool = aSchool[iNum1-1][iNum2-1]
+            for(var k = 0; k < aaSchool.length; k++){
+                $('#school').append('<option value="'+aaSchool[k]+'">'+aaSchool[k]+'</option>')
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>上元教育新官网</title>
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/syedu1.ico">
+    <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/swiper-4.1.6.min.js" type="text/javascript" charset="UTF-8"></script>
+    <style>
+        body{
+            background-image:url('images/schoolBack.jpg');
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header id="header"></header>
+<!--内容-->
+<div class="example">
+    <!--轮播+课程导航-->
+    <div class="courseBar">
+        <div class="all_course">
+            <p class="title">全部课程分类</p>
+            <ul class="courseList">
+                <li>
+                    <div class="courseName">
+                        <h3></h3>
+                        <p class="small"> &nbsp;</p>
+                    </div>
+                    <p class="iconfont">&#xe68b;</p>
+                    <div class="courseShow">
+                        <ul>
+                            <li v-for="couName in tmp.specialty">
+                                <h5></h5>
+                                <div class="desc">
+                                    <a href="##" class="cName">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner01.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner02.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner03.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner04.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner05.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="##"><img src="images/banner06.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--课程信息 会计-->
+    <div class="container courseBox accountant">
+        <div class="navBar">
+            <h2>上元会计</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 设计-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>兴元设计</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 IT-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>上元IT</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 外语-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>思元外语</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 教师-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>上元教师</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 建工-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>登元建工</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 资格-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>上元资格</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--课程信息 学历-->
+    <div class="container courseBox">
+        <div class="navBar">
+            <h2>捷梯学历</h2>
+            <ul class="navName">
+                <li class="titleName">
+                    <a href="##" class="tName">
+                        会计资格证
+                    </a>
+                </li>
+            </ul>
+            <p class="more">
+                <a href="##">更多课程 <span class="iconfont">&#xe68b;</span></a>
+            </p>
+        </div>
+        <div class="content">
+            <div class="advertising">
+                <a href="##"><img src="images/1.jpg" alt="" class="fullWidth"></a>
+            </div>
+            <div class="message">
+                <div class="messageLf">
+                    <div class="title">
+                        <h3 class="name">精选课程</h3>
+                        <a href="##" class="more1">更多 <span class="iconfont ">&#xe68b;</span></a>
+                    </div>
+                    <ul class="detail clearFloat">
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course01.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course02.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course03.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course04.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course05.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="##" class="item">
+                                <div class="imageBox">
+                                    <img src="images/course06.jpg" alt="" class="fullWidth">
+                                </div>
+                                <h4 class="courseTitle">会计做账实操</h4>
+                                <p>我也不知道写什么写什么不知道，随便写写</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="messageRg">
+                    <div class="top">
+                        <div class="title">
+                            <h3 class="opening">开班信息</h3>
+                            <a href="##" class="ref" @click="rotate(true)">换一批
+                                <span class="iconfont rate">&#xe636;</span>
+                            </a>
+                        </div>
+                        <ul class="picture">
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="swiper-container swiperSmall">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/222.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="##">
+                                                <img src="images/111.jpg" alt="" class="fullWidth">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="down">
+                        <div class="title">
+                            <h3 class="name">新闻资讯</h3>
+                            <a href="##" class="more2">更多 <span class="iconfont">&#xe68b;</span></a>
+                        </div>
+                        <ul class="information">
+                            <li>
+                                <a href="##">
+                                    管理会计，不单止适用于大型企业中型企业小型企业...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    注册会计师税法记不住怎么办怎么办怎么办怎么办....
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计得有资格证书资格证书资格证书资格证书...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师MACC管理会计师MACC管理会计师...
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##">
+                                    MACC管理会计师影响力很大，很广泛，很恨很恨很恨很....
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--左侧锚点-->
+    <ul class="anchor" id="anchor">
+        <li class="anchorBtn">上元会计</li>
+        <li class="anchorBtn">兴元设计</li>
+        <li class="anchorBtn">上元IT</li>
+        <li class="anchorBtn">思元外语</li>
+        <li class="anchorBtn">上元教师</li>
+        <li class="anchorBtn">登元建工</li>
+        <li class="anchorBtn">上元资格</li>
+        <li class="anchorBtn">捷梯学历</li>
+    </ul>
+    <!--右侧客服-->
+    <ul class="server">
+        <li class="showText showText1">
+            <a href="##">
+                <span class="iconfont" style="font-size:25px;">&#xe77f;</span>
+                <span class="text">在线客服</span>
+            </a>
+        </li >
+        <li class="showText2">
+            <a href="##">
+                <span class="iconfont">&#xe685;</span>
+                <span class="text">留言反馈</span>
+            </a>
+        </li>
+        <li class="showImg">
+            <a href="##">
+                <span class="iconfont">&#xe615;</span>
+                <span class="box">
+                <img src="images/rgMove.png" alt="" class="fullWidth">
+              </span>
+            </a>
+        </li>
+        <li class="showText2">
+            <a href="#">
+                <span class="iconfont">&#xe61b;</span>
+                <span class="text">返回顶部</span>
+            </a>
+        </li>
+    </ul>
+    <!--底部领取课程-->
+    <div class="bottom free">
+        <div class="draw">
+            <img src="images/server.png" alt="">
+            <form class="req">
+                <div class="input">
+                    姓名： <input type="text" id="uname">
+                    <p class="emptyShow s1">姓名不能为空<span class="arrows"></span></p>
+                </div>
+                <div class="input">
+                    手机号： <input type="text" id="uphone">
+                    <p class="emptyShow s2">号码格式不正确 <sapn class="arrows"></sapn></p>
+                </div>
+                <button class="btn" id="freeBtn">免费领取课程</button>
+                <p class="iconfont" id="delete">&#xe638;</p>
+            </form>
+        </div>
+        <div class="messageWindow">
+            <div class="hide">
+                <button class="iconfont hidden">&#xe638;</button>
+            </div>
+            <div class="messageSuccess">
+                <p class="success clearFloat">
+                    <span class="iconfont">&#xe65f;</span>
+                    <span class="text">提交信息成功！</span>
+                </p>
+                <p>恭喜您提交成功</p>
+                <p>我们的老师将在3个工作日内联系您，请您保持电话畅通！</p>
+            </div>
+            <div class="affirm">
+                <a href="##" class="btnHide hidden">我知道了</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer"></footer>
+<script src="js/base.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/header.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/school.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

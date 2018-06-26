@@ -1,0 +1,387 @@
+.top{
+  padding-top:1px;
+}
+.top .crumbs{
+  margin:30px 0 10px 0;
+}
+.top .crumbs .navTar{
+  font-size:14px;
+  color:#666;
+}
+.top .crumbs .home{
+  font-size:20px;
+}
+.detail1{
+  background:#fff;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+.detail1 .left{
+  width:32.5%;
+  padding:20px;
+  position:relative;
+}
+.detail1 .left .box{
+  width:100%;
+  height:300px;
+  overflow:hidden;
+}
+.detail1 .left .share{
+  width:100%;
+  height:25px;
+  line-height:25px;
+  margin:10px 0;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  color:#666;
+}
+.detail1 .left .share .num{
+  color:#f39800;
+}
+.detail1 .left .share .shareBtn{
+  width:25%;
+  padding-top:2px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  position:relative;
+}
+.detail1 .left .share .shareBtn .shared{
+  display:block;
+  width:25%;
+}
+/********************/
+@keyframes hiddeMove  {
+  0%{
+    transform:translateX(20px);
+    -webkit-transform:translateX(20px);
+    -moz-transform:translateX(20px);
+    -ms-transform:translateX(20px);
+  }
+  100%{
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+  }
+}
+.detail1 .matter{
+  width:66%;
+  padding:1px 0;
+}
+.detail1 .matter .title{
+  width:100%;
+  height:55px;
+  border-bottom:2px solid #999;
+  line-height:55px;
+  color:#666;
+}
+.detail1 .matter .matterBox{
+  width:100%;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+.detail1 .matter .matterBox .one{
+  width:70%;
+}
+.detail1 .matter .matterBox .one .dateTime{
+  width:100%;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+}
+.detail1 .matter .matterBox .one .dateTime .iconfont{
+  font-size:22px;
+  color:#666;
+}
+.detail1 .matter .matterBox .one .dateTime p{
+  width:46%;
+  font-size:16px;
+  margin-top:25px;
+  color:#666;
+  white-space:nowrap;
+}
+.detail1 .matter .matterBox .one .dateTime p select{
+  width:120px;
+  height:25px;
+  margin-left:20px;
+  text-align:center;
+  outline:none;
+  color:#666;
+}
+.detail1 .matter .matterBox .one .descText{
+  width:100%;
+  margin-top: 25px;
+  height:195px;
+  background:#f4f6fa;
+  padding:20px 20px 0 20px;
+  line-height:30px;
+  color:#999;
+}
+/*按钮*/
+.detail1 .matter .matterBox .one .buttons{
+  width:100%;
+  padding:7% 11% 6% 11%;
+}
+.detail1 .matter .matterBox .one .buttons .button{
+  display:inline-block;
+  width:140px;
+  height:36px;
+  text-align:center;
+  line-height:36px;
+  font-size:18px;
+  color:#fff;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  margin:0 35px;
+  position:relative;
+  overflow:hidden;
+}
+.detail1 .matter .matterBox .one .btn1{
+  background:#f39800;
+}
+.detail1 .matter .matterBox .one .btn2{
+  background:#3d66ad;
+}
+.detail1 .matter .matterBox .one .button .mirror,.outMirror{
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.detail1 .matter .matterBox .one .button .mirror1{
+  background:#ee7d00;
+  z-index:1;
+  display:none;
+}
+.detail1 .matter .matterBox .one .button .mirror2{
+  background:#31538c;
+  z-index:1;
+  display:none;
+}
+.detail1 .matter .matterBox .one .button .outMirror{
+  background:transparent;
+  z-index:10;
+}
+.detail1 .matter .matterBox .one .btn1:hover .mirror1{
+  display:block;
+  animation:moveLeft .2s;
+  -webkit-animation:moveLeft .2s;
+  -moz-animation:moveLeft .2s;
+}
+.detail1 .matter .matterBox .one .btn2:hover .mirror2{
+  display:block;
+  animation:moveLeft .2s;
+  -webkit-animation:moveLeft .2s;
+  -moz-animation:moveLeft .2s;
+}
+
+@keyframes moveLeft{
+  0%{
+    transform:translateX(-140px);
+    -webkit-transform:translateX(-140px);
+    -moz-transform:translateX(-140px);
+    -ms-transform:translateX(-140px);
+  }
+  100%{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+  }
+}
+/*热门班级排行*/
+.detail1 .matter .matterBox .two{
+  width:23%;
+}
+.detail1 .matter .matterBox .two .smallTitle{
+  width:100%;
+  margin:25px 0 15px 0;
+  border-left:3px solid #023894;
+  padding-left:10px;
+  font-weight:bold;
+  font-size:16px;
+  font-family:"思源黑体 CN";
+}
+.detail1 .matter .matterBox .two .hotClass{
+  width:100%;
+}
+.detail1 .matter .matterBox .two .hotClass li{
+  margin:8px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.detail1 .matter .matterBox .two .hotClass li .num{
+  display:inline-block;
+  width:16px;
+  height:16px;
+  background:#bfbfbf;
+  color:#fff;
+  text-align:center;
+  line-height:16px;
+  font-size:12px;
+  border-radius:3px;
+}
+.detail1 .matter .matterBox .two .hotClass li .red{
+  background:#f00;
+}
+.detail1 .matter .matterBox .two .hotClass li .orange{
+  background:#eb6100;
+}
+.detail1 .matter .matterBox .two .hotClass li .banana{
+  background:#f39800;
+}
+.detail1 .matter .matterBox .two .hotClass li .gray{
+  background:#7d7d7d;
+}
+.detail1 .matter .matterBox .two .hotClass li .five{
+  background:#a0a0a0;
+}
+.detail1 .matter .matterBox .two .hotClass li .hc:hover{
+  text-decoration: underline;
+}
+/*课程详情*/
+.courseDetails{
+  background:#fff;
+  padding:1% 0;
+  margin-top:40px;
+}
+.courseDetails .titleBar1{
+  width:100%;
+  margin:10px 0 40px 0;
+  height:50px;
+  background:#f4f6fa;
+  position:relative;
+}
+.courseDetails .titleBar1 p{
+  display:inline-block;
+  height:100%;
+  line-height:50px;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+}
+.courseDetails .titleBar1 .title{
+  width:160px;
+  background:#3d66ad;
+  color:#fff;
+  position:relative;
+  left:-10px;
+}
+.courseDetails .titleBar1 .title .triangle{
+  display:block;
+  width:0;
+  height:0;
+  border-top:10px solid #1d3254;
+  border-bottom:10px solid transparent;
+  border-left:10px solid transparent;
+  position:absolute;
+  left:0;
+  bottom:-20px;
+}
+.courseDetails .titleBar1 .englishName{
+  width:250px;
+  color:#3d66ad;
+  position:absolute;
+  right:0;
+  top:0;
+}
+.courseDetails .content{
+  width:100%;
+  padding:40px 100px;
+}
+/*相关课程+标题*/
+.related{
+  background:#fff;
+  padding:1% 0;
+  margin-top:40px;
+}
+.related .titleBar2{
+  width:100%;
+  height:50px;
+  margin:10px 0;
+  background:#f4f6fa;
+  position:relative;
+}
+.related .titleBar2 p{
+  display:inline-block;
+  height:100%;
+  line-height:50px;
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+.related .titleBar2 .englishName{
+  width:250px;
+  color:#3d66ad;
+}
+.related .titleBar2 .title{
+  width:160px;
+  background:#3d66ad;
+  color:#fff;
+  position:absolute;
+  right:-10px;
+}
+.related .titleBar2 .title .triangle{
+  display:block;
+  width:0;
+  height:0;
+  border-top:10px solid #1d3254;
+  border-bottom:10px solid transparent;
+  border-right:10px solid transparent;
+  position:absolute;
+  right:0;
+  bottom:-20px;
+}
+/*content*/
+.relCourse{
+  width:85%;
+  margin:30px auto;
+  padding:30px 40px;
+}
+.relCourse ul li{
+  width:33.33%;
+  float:left;
+  margin:2px 0;
+  padding-left:50px;
+  height:30px;
+  line-height:30px;
+  font-size:15px;
+}
+.relCourse ul li .chart{
+  display:inline-block;
+  width:5px;
+  height:5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin-right:10px;
+  margin-bottom:2px;
+  background:#999;
+}
+.relCourse ul li:hover .chart{
+  background:#3d66ad;
+}
+.relCourse ul li:hover .relateBtn{
+  color:#3d66ad;
+  text-decoration: underline;
+}
+.shareName {
+  width: 60px;
+  height: 100%;
+  line-height: 25px;
+}

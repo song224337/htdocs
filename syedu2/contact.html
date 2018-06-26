@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/syedu1.ico">
+    <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="http://api.map.baidu.com/api?v=3.0&ak=jCehqijYtVGyQzvFmafLl2nG4ui4H6UX" type="text/javascript"></script>
+    <!-- 加载百度地图样式信息窗口 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</head>
+<body>
+<!--头部-->
+<header id="header"></header>
+<!--内容-->
+<div class="example">
+    <!--广告-->
+    <div class="advertising1"></div>
+    <!--联系我们-->
+    <div class="contactUs container">
+        <!--标题-->
+        <div class="titleBar">
+            <P class="title">
+                联系我们
+                <span class="triangle"></span>
+            </P>
+            <p class="englishName">CONTACT US</p>
+        </div>
+        <!--logo & number & address-->
+        <div class="syedu">
+            <div class="logoPic">
+                <img src="images/logo.png" alt="" class="fullWidth">
+            </div>
+            <div class="telephone">
+                <p class="number">全国咨询热线：400-666-7863</p>
+                <span class="line"></span>
+            </div>
+            <div class="address">
+                总部地址：江苏省苏州市工业园区新平街388号腾飞苏州创新园A2座9F
+            </div>
+        </div>
+        <!--progress-->
+        <div class="guide">
+            <div class="sliding"></div>
+        </div>
+        <!--校区地图-->
+        <div class="map" id="map">
+            <div class="baiduMap" id="baiduMap"></div>
+        </div>
+        <!--all school-->
+        <div class="schoolAddress">
+            <!--标题-->
+            <div class="titleBar2">
+                <p class="englishName">ALL SCHOOLS</p>
+                <P class="title">
+                    全国校区
+                    <span class="triangle"></span>
+                </P>
+            </div>
+            <table class="table" cellspacing="15">
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+                <tr>
+                    <td><a href="##">苏州本部校</a></td>
+                    <td>苏州市工业园区新平街388号腾飞苏州创新园A2座-9楼</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--右侧客服-->
+    <ul class="server">
+        <li class="showText showText1">
+            <a href="##">
+                <span class="iconfont" style="font-size:25px;">&#xe77f;</span>
+                <span class="text">在线客服</span>
+            </a>
+        </li >
+        <li class="showText2">
+            <a href="##">
+                <span class="iconfont">&#xe685;</span>
+                <span class="text">留言反馈</span>
+            </a>
+        </li>
+        <li class="showImg">
+            <a href="##">
+                <span class="iconfont">&#xe615;</span>
+                <span class="box">
+                <img src="images/rgMove.png" alt="" class="fullWidth">
+              </span>
+            </a>
+        </li>
+        <li class="showText2">
+            <a href="#">
+                <span class="iconfont">&#xe61b;</span>
+                <span class="text">返回顶部</span>
+            </a>
+        </li>
+    </ul>
+    <!--底部领取课程-->
+    <div class="bottom free">
+        <div class="draw">
+            <img src="images/server.png" alt="">
+            <form class="req">
+                <div class="input">
+                    姓名： <input type="text" id="uname">
+                    <p class="emptyShow s1">姓名不能为空<span class="arrows"></span></p>
+                </div>
+                <div class="input">
+                    手机号： <input type="text" id="uphone">
+                    <p class="emptyShow s2">号码格式不正确 <span class="arrows"></span></p>
+                </div>
+                <button class="btn" id="freeBtn">免费领取课程</button>
+                <p class="iconfont" id="delete">&#xe638;</p>
+            </form>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer id="footer"></footer>
+<script src="js/base.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/header.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/contact.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+</html>

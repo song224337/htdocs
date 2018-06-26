@@ -1,0 +1,300 @@
+/*新闻列表*/
+.newsList{
+  margin-top:40px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+/*leftTitle*/
+.newsList .left{
+  width:870px;
+  background:#fff;
+  padding:1px 0;
+  position:relative;
+}
+.newsList .left .leftTitle{
+  height:70px;
+  border-bottom:2px solid #ccc;
+  padding-top:30px;
+  position:relative;
+}
+.newsList .left .leftTitle .listName{
+  width:40%;
+  font-size:24px;
+  font-weight:bold;
+  color:#3d66ad;
+  border-left:5px solid #3d66ad;
+  padding-left:20px;
+}
+.newsList .left .leftTitle .crumbs{
+  width:auto;
+  padding-right:10px;
+  position:absolute;
+  right:0;
+  bottom:5px;
+}
+.newsList .left .leftTitle .crumbs .navCrumbs{
+  font-size:14px;
+}
+.newsList .left .contentList{
+  width:100%;
+  height:100%;
+  padding:30px 35px;
+}
+/*最新新闻*/
+.newsList .left .contentList .newest .newImg{
+  width:260px;
+  height:160px;
+  float:left;
+  overflow:hidden;
+}
+.newsList .left .contentList .newest .detail{
+  width:515px;
+  float:left;
+  margin-left:25px;
+}
+.newsList .left .contentList .newest .detail .date{
+  font-size:18px;
+  color:#3d66ad;
+}
+.newsList .left .contentList .newest .detail .subtitle{
+  font-size:18px;
+  color:#999;
+  font-weight:bold;
+}
+.newsList .left .contentList .newest .detail .presentation{
+  color:#999;
+}
+.newsList .left .contentList .newest .detail .btnMore{
+  display:block;
+  width:120px;
+  height:26px;
+  text-align:center;
+  position:absolute;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  background:#3d66ad;
+  overflow:hidden;
+  margin-top:10px;
+}
+.newsList .left .contentList .newest .detail .btnMore .mirror{
+  width:100%;
+  height:100%;
+  background:#31538c;
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+}
+.newsList .left .contentList .newest .detail .btnMore .btnName{
+  display:block;
+  width:100%;
+  height:100%;
+  line-height:26px;
+  color:#fff;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:10;
+}
+.newsList .left .contentList .newest .detail .btnMore:hover .mirror{
+  display:block;
+  animation: moveLeft 0.2s;
+  -webkit-animation: moveLeft 0.2s;
+}
+@keyframes moveLeft{
+  0%{
+    transform:translateX(-120px);
+    -webkit-transform:translateX(-120px);
+    -moz-transform:translateX(-120px);
+    -ms-transform:translateX(-120px);
+  }
+  100%{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+  }
+}
+/*新闻列表*/
+.newsList .left .contentList .allNews{
+  margin-top:40px;
+}
+.newsList .left .contentList .allNews li{
+  width:100%;
+  padding:15px 25px;
+  border-bottom:1px solid #ccc;
+}
+.newsList .left .contentList .allNews li .fullBox{
+  display:block;
+  width:100%;
+  height:100%;
+  position:relative;
+  color:#999;
+}
+.newsList .left .contentList .allNews .fullBox .date{
+  display:inline-block;
+  height:100%;
+}
+.newsList .left .contentList .allNews .fullBox .date .day{
+  font-size:72px;
+  font-weight:bold;
+}
+.newsList .left .contentList .allNews .fullBox .date .years{
+  font-size:18px;
+  text-align:center;
+}
+.newsList .left .contentList .allNews .fullBox .newsDesc{
+  display:inline-block;
+  width:660px;
+  margin-left:5px;
+  height:100px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.newsList .left .contentList .allNews .fullBox .newsDesc .subtitle{
+  font-size:18px;
+  font-weight:bold;
+  margin:8px 0;
+}
+.newsList .left .contentList .allNews .fullBox .newsDesc .text{
+  height:60px;
+  overflow:hidden;
+  line-height:20px;
+}
+.newsList .left .contentList .allNews li:hover{
+  background:#eaeef6;
+  border-color:#eaeef6;
+}
+.newsList .left .contentList .allNews li:hover .date{
+  color:#3d66ad;
+}
+/*分页器*/
+.newsList .left .pageCount{
+  width:100%;
+  position:absolute;
+  left:0;
+  bottom:-50px;
+  cursor:pointer;
+  text-align:center;
+  color:#999;
+}
+.newsList .left .pageCount span{
+  display:inline-block;
+  height:30px;
+  line-height:30px;
+  padding:0 10px;
+  font-size:18px;
+  border:1px solid #ccc;
+  margin:0 3px;
+}
+.newsList .left .pageCount span:hover{
+  background:#3d66ad;
+  color:#fff;
+}
+.active{
+  background:#3d66ad;
+  color:#fff;
+}
+  /*右侧*/
+.newsList .right{
+  width:300px;
+  padding:1px 0;
+  height:100%;
+}
+.newsList .right .top{
+  background:#fff;
+  padding-bottom:1px;
+}
+/*title*/
+.newsList .right .rightTitle{
+  height:70px;
+  border-bottom:2px solid #ccc;
+  position:relative;
+  padding-top:30px;
+}
+.newsList .right .rightTitle .hot{
+  display:inline-block;
+  width:150px;
+  font-size:24px;
+  font-weight:bold;
+  color:#3d66ad;
+  border-left:5px solid #3d66ad;
+  padding-left:20px;
+}
+.newsList .right .rightTitle .ref{
+  display:inline-block;
+  width:80px;
+  position:absolute;
+  right:0;
+  top:43px;
+  text-align:center;
+}
+/*图片区*/
+.newsList .right .hotPicList{
+  width:100%;
+  padding:0 20px;
+}
+.newsList .right .hotPicList li{
+  width:100%;
+  height:180px;
+  overflow:hidden;
+  margin:20px 0;
+}
+/*相关资讯*/
+.newsList .right .relatedInformation{
+  width:100%;
+  margin-top:30px;
+  padding:20px 0;
+  background:#fff;
+}
+.newsList .right .relatedInformation .informationTitle{
+  width:100%;
+  border-bottom:2px solid #ccc;
+  padding-top:10px;
+}
+.newsList .right .relatedInformation .informationTitle p{
+  font-size:24px;
+  font-weight:bold;
+  color:#3d66ad;
+  border-left:5px solid #3d66ad;
+  padding-left:20px;
+  margin-bottom:10px;
+}
+.newsList .right .relatedInformation .inforMessage{
+  width:100%;
+  margin-top:20px;
+  padding:0 20px;
+}
+.newsList .right .relatedInformation .inforMessage li{
+  width:100%;
+  height:30px;
+}
+.newsList .right .relatedInformation .inforMessage li a{
+  display:block;
+  width:100%;
+  line-height:30px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:14px;
+}
+.newsList .right .relatedInformation .inforMessage li a .rhombus{
+  display:inline-block;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  background: #999;
+  margin:2px 5px;
+}
+.newsList .right .relatedInformation .inforMessage li a:hover{
+  color:#3d66ad;
+  text-decoration: underline;
+}
+.newsList .right .relatedInformation .inforMessage li a:hover .rhombus{
+  background:#3d66ad;
+}

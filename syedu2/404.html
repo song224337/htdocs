@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+	<title>404 Page Not Found</title>
+	<link rel="stylesheet" type="text/css" href="css/404.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/syedu1.ico">
+</head>
+<body>
+	<div class="system-message">
+		<img src="images/error.jpg" width="500" height="93">
+		<p class="error">404错误 您访问的页面不存在，5秒后跳至首页</p>
+		<p class="detail"></p>
+		<p class="jump">
+			页面自动 <a id="href" href="##">跳转</a> 等待时间： <b id="wait">5</b>
+		</p>
+</div>
+<script type="text/javascript">
+(function(){
+let wait = document.getElementById('wait'),href = document.getElementById('href').href;
+let interval = setInterval(function(){
+	let time = --wait.innerHTML;
+	if(time === 0) {
+        location.href = href;        
+		clearInterval(interval);
+	};
+}, 1000);
+})();
+</script>
+</body>
+</html>

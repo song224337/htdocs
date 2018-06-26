@@ -1,0 +1,507 @@
+/*banner*/
+.banner{
+  width:100%;
+  height:620px;
+  position:relative;
+  overflow:hidden;
+}
+.swiper-container1{
+  width:100%;
+  margin:0 auto;
+}
+/*课程导航*/
+.courseBar{
+  width:1200px;
+  margin:0 auto;
+  z-index:10;
+  position:relative;
+}
+.courseBar .all_course{
+  width:20%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.courseBar .all_course .title{
+  width:100%;
+  height:70px;
+  background-image:url('../images/title_back.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#fff;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  line-height:70px;
+}
+.courseList{
+  width:100%;
+  height:550px;
+  background:#fff;
+  color:#666;
+}
+.courseList li{
+  height:68.8px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+.courseList li .courseName{
+  width:90%;
+  height:100%;
+}
+.courseList li h3{
+  width:100%;
+  height:60%;
+  font-size:16px;
+  text-align:left;
+  line-height:50px;
+  padding-left:10px;
+}
+.courseList li .small{
+  height:40%;
+  font-weight:normal;
+  font-size:12px;
+  text-align:left;
+  line-height:25px;
+  padding-left:10px;
+}
+.courseList li .small a{
+  color:#999;
+}
+.courseList li .small a:hover{
+  text-decoration: underline;
+}
+.courseList li .iconfont{
+  width:10%;
+  color:#ccc;
+  line-height:68px;
+}
+.courseList li:hover{
+  background:#e7edf6;
+}
+.courseList li:hover .courseShow{
+  display:block;
+}
+.courseShow{
+  width:880px;
+  height:620px;
+  background-image:url('../images/showback.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:absolute;
+  left:240px;
+  top:0;
+  display:none;
+  overflow:auto;
+}
+.courseShow ul li{
+  width:100%;
+  height:100%;
+  display: flex;
+  display:-webkit-flex;
+  justify-content:flex-start;
+  color:#666;
+
+}
+.courseShow ul li h5{
+  width:14%;
+  padding-left:10px;
+  height:38px;
+  line-height:38px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-right:30px;
+}
+.courseShow ul li .desc{
+  width:85%;
+  font-size:12px;
+  padding:0 0 0 10px;
+}
+.courseShow ul li .desc .cName{
+  display:inline-block;
+  padding:3px 0;
+  margin:7px 10px;
+  box-sizing:border-box;
+  border-bottom:1px solid transparent;
+}
+.courseShow ul li:hover{
+  background:transparent;
+}
+.courseShow ul li:hover h5{
+  background:#3d66ad;
+}
+.courseShow ul li:hover h5 .courseTitle{
+  color:#fff;
+  border-color:#fff;
+}
+.courseShow ul li:hover .desc{
+  background:#3d66ad;
+  color:#fff;
+}
+.courseShow ul li:hover .cName{
+  color:#fff;
+}
+.courseShow ul li .desc .cName:hover{
+  border-color:#fff;
+}
+/*课程福利*/
+/*swiper2*/
+.swiper2Box{
+  width:1200px;
+  margin:4% auto;
+  position:relative;
+}
+.swiper-container2{
+  width:100%;
+  background:#e9f5f5;
+}
+.swiper-container2 .swiper-slide{
+  width:100%;
+}
+.floor {
+  width:100%;
+  /*padding:0 10px;*/
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  -webkit-flex-wrap:nowrap;
+  flex-wrap:nowrap;
+  -ms-flex-wrap:nowrap;
+}
+.floor li{
+  width:23.8%;
+  height:185px;
+  overflow:hidden;
+  position:relative;
+  transition:all linear 0.5s;
+  -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+}
+.floor li:hover{
+  transform:scale(0.95);
+  -webkit-transform:scale(0.95);
+  -moz-transform:scale(0.95);
+  -ms-transform:scale(0.95);
+}
+/*swiper2 end*/
+
+/*上元会计*/
+.courseBox{
+  background:#fff;
+  padding:1% 0;
+  margin:2% auto;
+  position:relative;
+}
+/*导航条*/
+.courseBox .navBar {
+  width: 100%;
+  height:60px;
+  border-bottom: 1px solid #999;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  position:relative;
+}
+.courseBox .navBar h2{
+  width:10%;
+  color:#3d66ad;
+  height:50%;
+  text-align:center;
+  border-left:3px solid #3d66ad;
+  position:relative;
+  top:37%;
+}
+.courseBox .navBar .navName{
+    width:73%;
+}
+.courseBox .navBar .navName .titleName{
+  float:left;
+  height:100%;
+  font-weight:bold;
+  font-size:16px;
+}
+.courseBox .navBar .navName .titleName .tName{
+  display:inline-block;
+  height:30px;
+  margin:25px 30px 0 0;
+  line-height:30px;
+}
+.courseBox .navBar .navName .titleName .tName:hover{
+  color:#3d66ad;
+    border-bottom:3px solid #3d66ad;
+}
+.nowaday{
+  color:#3d66ad;
+    border-bottom:3px solid #3d66ad;
+}
+.courseBox .navBar .more{
+  width:10%;
+  line-height:80px;
+  text-align:center;
+}
+.courseBox .navBar .more a{
+  color:#777;
+}
+/*内容详情==>广告图*/
+.courseBox .content{
+  width:100%;
+  margin:3% auto 1% auto;
+  padding:0 20px;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+.courseBox .content .advertising{
+  width:18.5%;
+  height:500px;
+  overflow:hidden;
+}
+/*内容详情==>课程+新闻部分*/
+.courseBox .content .message{
+  width:80%;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+}
+/******messageLeft******/
+.courseBox .content .message .messageLf{
+  width:75%;
+}
+.courseBox .content .message .messageLf .title{
+  width:100%;
+  position:relative;
+}
+.courseBox .content .message .messageLf .title .name{
+  display:inline-block;
+  width:13%;
+  text-align:center;
+  border-left:3px solid #3d66ad;
+  font-weight:bold;
+  color:#666;
+}
+.courseBox .content .message .messageLf .title .more1{
+  display:inline-block;
+  width:10%;
+  text-align:right;
+  position:absolute;
+  right:0;
+  color:#b6b6b6;
+  font-size:14px;
+  font-weight:normal;
+}
+/******messageLeft--detail******/
+.courseBox .content .message .messageLf .detail{
+  width:100%;
+  margin-top:1.5%;
+}
+.courseBox .content .message .messageLf .detail li{
+  width:33.3%;
+  padding:5px;
+  float:left;
+  border:1px solid #fff;
+  margin:1.5% 0;
+}
+.courseBox .content .message .messageLf .detail li .imageBox{
+  width:100%;
+  height:136px;
+  overflow:hidden;
+}
+.courseBox .content .message .messageLf .detail li:hover{
+  border-color: #ccc;
+  box-sizing:border-box;
+}
+.courseBox .content .message .messageLf .detail li .item{
+  display:block;
+}
+.courseBox .content .message .messageLf .detail li h4{
+  margin:2% 0;
+  color:#666;
+  font-size:15px;
+}
+.courseBox .content .message .messageLf .detail li:hover h4{
+  color:#3d66ad;
+}
+.courseBox .content .message .messageLf .detail li p{
+  height:40px;
+  font-size:12px;
+  line-height:20px;
+  font-weight:normal;
+  color:#7f7f7f;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+/****messageRg*****/
+.courseBox .content .message .messageRg{
+  width:23.5%;
+}
+.courseBox .content .message .messageRg .top .title{
+  width:100%;
+  height:30px;
+  position:relative;
+  border-bottom:1px solid #ccc;
+}
+.courseBox .content .message .messageRg .top .title .opening{
+  display:inline-block;
+  width:40%;
+  text-align:center;
+  color:#666;
+  font-weight:bold;
+  border-left:3px solid #3d66ad;
+}
+.courseBox .content .message .messageRg .top .title .ref{
+  display:inline-block;
+  width:35%;
+  text-align:right;
+  position:absolute;
+  right:0;
+  color:#b6b6b6;
+  font-size:14px;
+  font-weight:normal;
+}
+.courseBox .content .message .messageRg .top .title .ref .iconfont{
+  display:inline-block;
+  font-size:14px;
+}
+/*刷新动画*/
+@keyframes rotate{
+  0%{
+    transform:rotate(0);
+    -webkit-transform:rotate(0);
+    -moz-transform:rotate(0);
+    -ms-transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate{
+  0%{
+    transform:rotate(0);
+    -webkit-transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+  }
+}
+/*picture*/
+.courseBox .content .message .messageRg .top .picture{
+  width:100%;
+  margin:8% 0;
+}
+.courseBox .content .message .messageRg .top .picture li{
+  margin-bottom:5%;
+  height:135px;
+  overflow:hidden;
+}
+.swiperSmall{
+  width:100%;
+}
+/*down*/
+.courseBox .content .message .messageRg .down .title{
+  width:100%;
+  height:30px;
+  position:relative;
+  border-bottom:1px solid #ccc;
+}
+.courseBox .content .message .messageRg .down .title .name{
+  display:inline-block;
+  width:40%;
+  text-align:center;
+  border-left:3px solid #3d66ad;
+  font-weight:bold;
+  color:#666;
+}
+.courseBox .content .message .messageRg .down .title .more2{
+  display:inline-block;
+  width:30%;
+  text-align:right;
+  position:absolute;
+  right:0;
+  color:#b6b6b6;
+  font-size:14px;
+  font-weight:normal
+}
+/*information*/
+.courseBox .content .message .messageRg .down .information{
+  width:100%;
+  margin-top:4%;
+}
+.courseBox .content .message .messageRg .down .information li{
+  margin:3% 0;
+}
+.courseBox .content .message .messageRg .down .information li a{
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:#999;
+  font-size:12px;
+  font-weight:normal;
+}
+.courseBox .content .message .messageRg .down .information li a .dot{
+  display:inline-block;
+  width:5px;
+  height:5px;
+  background:#999;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  margin-right:5px;
+  margin-bottom:1px;
+}
+.courseBox .content .message .messageRg .down .information li a:hover{
+  color:#3d66ad;
+}
+.courseBox .content .message .messageRg .down .information li a:hover .dot{
+  background:#3d66ad;
+}
+/*锚点*/
+.anchor{
+  position:fixed;
+  left:10px;
+  top:30%;
+  display:none;
+  z-index:100;
+  color:#333;
+}
+@media (min-width:1450px){
+  .anchor li{
+    height:45px;
+    text-align:center;
+    line-height:45px;
+    font-size:18px;
+    padding:0 30px;
+    margin:2px;
+    background:#fff;
+  }
+}
+@media (max-width:1440px){
+  .anchor li{
+    height:45px;
+    text-align:center;
+    line-height:45px;
+    font-size:14px;
+    padding:0 15px;
+    margin:2px;
+    background:#fff;
+  }
+}
+.anchor li:hover{
+  background:#023894;
+  cursor:pointer;
+  color:#fff;
+}
